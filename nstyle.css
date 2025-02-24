@@ -84,3 +84,13 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 90%;
+    }
+}
