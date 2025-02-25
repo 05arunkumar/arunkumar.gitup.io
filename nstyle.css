@@ -1,66 +1,26 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-h1 {
-    color: #333;
-}
-p {
-    color: #555;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
+/* Navigation Bar */
 header {
-    background-color: #0073e6;
+    background: #333;
     color: white;
-    padding: 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #0073e6;
-}
-
-a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-a:hover {
-    text-decoration: underline;
-}
-nav {
-    background: #0073e6;
     padding: 10px 0;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -71,26 +31,77 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
 }
-.profile-pic {
-    width: 150px;
-    height: 150px;
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: #555;
+    color: white;
+}
+
+.hero .profile-pic {
+    width: 120px;
     border-radius: 50%;
-    margin-top: 10px;
+    border: 3px solid white;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
-@media screen and (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
 
-    section {
-        width: 90%;
-    }
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+/* Skills */
+.skill-list span {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
