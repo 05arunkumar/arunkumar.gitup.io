@@ -41,9 +41,14 @@ nav ul li a {
 }
 
 .hero .profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
+    width: 150px;  /* Set the width to 150px */
+    height: 150px; /* Set the height to 150px */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures proper fitting inside the set dimensions */
+    display: block; 
+    margin: 10px auto; /* Centers the image */
+    border: 3px solid #333; /* Optional: Adds a border */
+
 }
 
 .btn {
