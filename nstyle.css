@@ -1,112 +1,56 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #111;
+    color: white;
     text-align: center;
 }
 
-/* Navigation Bar */
-header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-}
-
 nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: black;
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
+    background: url('background.jpg') no-repeat center center/cover;
     padding: 100px 20px;
-    background: #555;
-    color: white;
 }
 
-.hero .profile-pic {
-    width: 150px;  /* Set the width to 150px */
-    height: 150px; /* Set the height to 150px */
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures proper fitting inside the set dimensions */
-    display: block; 
-    margin: 10px auto; /* Centers the image */
-    border: 3px solid #333; /* Optional: Adds a border */
-
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
 }
 
-.btn {
-    background: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+h1 {
+    font-size: 36px;
 }
 
-/* Sections */
+p {
+    font-size: 18px;
+}
+
 section {
     padding: 50px 20px;
+    border-bottom: 1px solid gray;
 }
 
-/* Skills */
-.skill-list span {
-    display: inline-block;
-    background: #222;
-    color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-/* Projects */
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.project {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Form */
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    width: 80%;
-    padding: 10px;
-    margin: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background: #ff6600;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+footer {
+    padding: 20px;
+    background: black;
 }
