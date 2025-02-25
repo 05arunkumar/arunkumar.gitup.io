@@ -1,50 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun Kumar Venkatesh | Portfolio</title>
+    <title>Arun Kumar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-        <img src="images/AK.jpg" alt="Arun Kumar" class="profile-pic">
-        <h1>Arun Kumar Venkatesh</h1>
-        <p>Production Support Specialist | Application Monitoring | Technical Support | RHCE & MCSE</p>
+        <h1>Arun Kumar</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="AK.jpg" alt="Arun Kumar" class="profile-pic">
+        <h2>Production Support Specialist</h2>
+        <p>Monitoring | Troubleshooting | AWS CloudWatch | RHCE & MCSE Certified</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am An Experienced Production Support Specialist with over 3+ years in troubleshooting, monitoring, and technical support.</p>
+        <p>I am a skilled Production Support Specialist with expertise in troubleshooting, monitoring, and technical support.</p>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Application Support</li>
-            <li>Incident Management</li>
-            <li>AWS CloudWatch Monitoring</li>
-            <li>ServiceNow & FreshWorks</li>
-            <li>RHCE & MCSE Certified</li>
-            <li>SQL Quering and Management</li>
-        </ul>
+        <div class="skill-list">
+            <span>Application Support</span>
+            <span>Incident Management</span>
+            <span>AWS CloudWatch</span>
+            <span>ServiceNow</span>
+            <span>SQL & Database</span>
+            <span>RHCE & MCSE Certified</span>
+        </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <p>Check out my projects on GitHub:</p>
-        <ul>
-            <li><a href="https://github.com/your-github-username/project1" target="_blank">Project 1</a></li>
-            <li><a href="https://github.com/your-github-username/project2" target="_blank">Project 2</a></li>
-        </ul>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <a href="https://github.com/your-github-username/project1" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <a href="https://github.com/your-github-username/project2" target="_blank">View Project</a>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email:arunkumar47654@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/arun-kumar-venkatesh-62a5b01a3/">LinkedIn Profile</a></p>
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:arunkumar47654@gmail.com">arunkumar47654@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arun-kumar-venkatesh-62a5b01a3/" target="_blank">LinkedIn Profile</a></p>
     </section>
+
 </body>
 </html>
