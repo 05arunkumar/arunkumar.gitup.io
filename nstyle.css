@@ -61,3 +61,12 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+
+.profile-pic {
+    width: 150px; /* Adjust size */
+    height: auto;
+    border-radius: 50%; /* Makes it circular */
+    display: block;
+    margin: 20px auto;
+}
+
