@@ -64,8 +64,8 @@ footer {
 
 .profile-pic {
     width: 10px; /* Adjust size */
-    height: 50px;
-    border-radius: 50%; /* Makes it circular */
+    height: 20px;
+    border-radius: 20%; /* Makes it circular */
     display: block;
     margin: 20px auto;
 }
