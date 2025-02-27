@@ -1,16 +1,32 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #babea7;
 }
 
-/* Header */
+ about {
+    background-color: #b9dbbb; /* Light Green */
+    color: #62a367; /* Dark Green text */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;  /* Adjust width */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes it circular */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    box-shadow: 0px 4px 8px rgba(14, 12, 12, 0.2); /* Adds shadow */
+}
+
+
 header {
-    background-color: #333;
+    background: #6f8355;
     color: white;
+    text-align: center;
     padding: 20px;
 }
 
@@ -25,34 +41,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(19, 17, 17);
     text-decoration: none;
-    font-size: 18px;
 }
 
-/* Sections */
-.container {
-    width: 80%;
-    margin: 30px auto;
-    background: white;
+section {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgb(171, 192, 137);
+    margin: 20px;
+    border-radius: 8px;
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
+h2 {
+    color: #0c0808;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
+
+
